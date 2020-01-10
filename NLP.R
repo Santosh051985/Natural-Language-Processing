@@ -32,7 +32,6 @@ class(s_v)
 str(s_v)
 (s_v)
 
-
 sentiment_vector <- get_sentiment(s_v, method = "bing")
 head(sentiment_vector)
 

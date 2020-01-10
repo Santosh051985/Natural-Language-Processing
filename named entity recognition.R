@@ -1,6 +1,6 @@
 library(rvest)
 library(NLP)
-Sys.setenv(JAVA_HOME='C:\\Java\\jre1.8.0_231\\bin')
+Sys.setenv(JAVA_HOME='C:\\Java\\jre1.8.0_231\\bin') # set java path for include of rJava library
 library(rJava)
 library(openNLP)
 page = read_html('https://en.wikipedia.org/wiki/Berkshire_Hathaway')

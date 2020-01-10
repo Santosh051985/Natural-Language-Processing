@@ -41,5 +41,4 @@ getwd()
 # #handleTweetsMessages <- unique(handleTweetsDF$text)
 # #handleTweetsMessages <- as.data.frame(handleTweetsMessages)
 # #write.csv(handleTweetsDF, "TefalHandleTweets.csv")
-# 
 library(rtweet)

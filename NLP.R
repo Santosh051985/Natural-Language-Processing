@@ -86,6 +86,7 @@ ft_values <- get_transformed_values(
   scale_vals = TRUE,
   scale_range = FALSE
 )
+
 plot(
   ft_values, 
   type ="h", 
@@ -94,10 +95,12 @@ plot(
   ylab = "Emotional Valence", 
   col = "red"
 )
+
 # categorize each sentence by eight emotions
 nrc_data <- get_nrc_sentiment(s_v)
 
 # subset
+
 sad_items <- which(nrc_data$sadness > 0)
 head(s_v[sad_items])
 

@@ -1,4 +1,6 @@
+# Library Text Mining Package (lm)
 library(tm)
+#Libraray Sparse Lightweight Arrays and Matrices(Slam)
 library(slam)
 library(topicmodels)
 

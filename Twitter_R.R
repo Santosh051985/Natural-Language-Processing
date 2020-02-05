@@ -25,14 +25,12 @@ twitteR:::setup_twitter_oauth("FXTquJNbgDG2dH81XYVqNZFAb", # Consumer Key (API K
                     "WlqZJwXFQzf64IuojkbKh1jdT5cnSY8U44pqmz6Sc1d4A")  #Access Token Secret
 
 #registerTwitterOAuth(cred)
-
 Tweets <-userTimeline('realDonaldTrump', n=3200,includeRts = T)
 TweetsDF <- twListToDF(Tweets)
 dim(TweetsDF)
 View(TweetsDF)
 
 write.csv(TweetsDF, "Tweets.csv",row.names = F)
-
 getwd()
 # 
 # handleTweetsDF <- twListToDF(handleTweets)

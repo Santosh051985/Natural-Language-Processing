@@ -19,8 +19,7 @@ library(reshape2)
 theme_set(theme_minimal())
 df <- read_csv("C:/Users/HP/Desktop/hilton-hawaiian-village/Hilton_Hawaiian_Village_Waikiki_Beach_Resort-Honolulu_Oahu_Hawaii__en.csv")
 df <- df[complete.cases(df), ]
+# Convert Date Format from " 1 April 2202" to 2002-04-01"
 df$review_date <- as.Date(df$review_date, format = "%d-%b-%y")
-
-
 
 dim(df); min(df$review_date); max(df$review_date)

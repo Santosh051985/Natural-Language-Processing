@@ -1,4 +1,4 @@
-# Import All required Library for use the functions
+# Import All required Library for use the functions to perform calculation
 library(dplyr)
 library(readr)
 library(lubridate)

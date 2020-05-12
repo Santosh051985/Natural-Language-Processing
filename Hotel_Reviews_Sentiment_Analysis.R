@@ -24,7 +24,7 @@ df$review_date <- as.Date(df$review_date, format = "%d-%b-%y")
 # Display Min means initial Review Date, Max represent Last Review Date
 dim(df); min(df$review_date); max(df$review_date)
 
-# Visualize the Review data per Week
+# Visualize the Review data per Week ####
 df %>%
   count(Week = round_date(review_date, "week")) %>%
   ggplot(aes(Week, n)) +
